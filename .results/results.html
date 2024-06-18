@@ -36,11 +36,11 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1718696761708,
+  &quot;startTime&quot;: 1718720057131,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/App.js&#x27;\n\n      2 | import userEvent from &#x27;@testing-library/user-event&#x27;\n      3 |\n    &gt; 4 | import App from &#x27;../App&#x27;\n        | ^\n      5 |\n      6 | const initialTodosList = [\n      7 |   {\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/__tests__/App.js:4:1)\n&quot;,
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;./components/SimpleTodos&#x27; from &#x27;src/App.js&#x27;\n\n    Require stack:\n      src/App.js\n      src/__tests__/App.js\n\n    &gt; 1 | import SimpleTodos from &#x27;./components/SimpleTodos&#x27;\n        | ^\n      2 |\n      3 | import &#x27;./App.css&#x27;\n      4 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/App.js:1:1)\n&quot;,
       &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 12,
       &quot;numPassingTests&quot;: 0,
@@ -67,13 +67,14 @@
         &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
         &quot;hint&quot;: &quot;&quot;,
         &quot;requireStack&quot;: [
-          &quot;/tmp/d758a6c6-f639-4fbd-aecd-4fa0fabd8f7d/src/__tests__/App.js&quot;
+          &quot;/tmp/a9bec593-82ad-49c0-ac67-4b023e1cbfe0/src/App.js&quot;,
+          &quot;/tmp/a9bec593-82ad-49c0-ac67-4b023e1cbfe0/src/__tests__/App.js&quot;
         ],
         &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../App&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/App.js&#x27;&quot;
+        &quot;moduleName&quot;: &quot;./components/SimpleTodos&quot;,
+        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;./components/SimpleTodos&#x27; from &#x27;src/App.js&#x27;&quot;
       },
-      &quot;testFilePath&quot;: &quot;/tmp/d758a6c6-f639-4fbd-aecd-4fa0fabd8f7d/src/__tests__/App.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/a9bec593-82ad-49c0-ac67-4b023e1cbfe0/src/__tests__/App.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [

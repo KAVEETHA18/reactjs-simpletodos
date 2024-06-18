@@ -61,29 +61,29 @@ class SimpleTodos extends Component {
   render() {
     const {todosList, newTodoTitle, newTodoCount} = this.state
     return (
-      <div className='container'>
-        <div className='inner-container'>
-          <h1 className='heading'>Simple Todos</h1>
-          <div className='add-todo'>
+      <div className="container">
+        <div className="inner-container">
+          <h1 className="heading">Simple Todos</h1>
+          <div className="add-todo">
             <input
-              type='text'
-              name='newTodoTitle'
+              type="text"
+              name="newTodoTitle"
               value={newTodoTitle}
               onChange={this.handleChange}
-              placeholder='Enter todo title'
+              placeholder="Enter todo title"
             />
             <input
-              type='number'
-              name='newTodoCount'
+              type="number"
+              name="newTodoCount"
               value={newTodoCount}
               onChange={this.handleChange}
-              placeholder='Enter number of todos'
+              placeholder="Enter number of todos"
             />
-            <button onClick={this.handleAddTodo} type='button'>
+            <button onClick={this.handleAddTodo} type="button">
               Add
             </button>
           </div>
-          <ul className='todos-list'>
+          <ul className="todos-list">
             {todosList.map(todo => (
               <TodoItem
                 key={todo.id}
